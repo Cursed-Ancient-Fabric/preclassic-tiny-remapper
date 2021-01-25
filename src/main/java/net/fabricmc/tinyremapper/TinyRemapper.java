@@ -532,9 +532,9 @@ public class TinyRemapper {
 				}
 			}
 
-			System.out.println("non-unique class target name mappings:");
+			System.out.println(duplicates.size() + " non-unique class target name mappings were found. Ignoring!");
 
-			for (String target : duplicates) {
+			/*for (String target : duplicates) {
 				System.out.print("  [");
 				boolean first = true;
 
@@ -553,7 +553,7 @@ public class TinyRemapper {
 				System.out.printf("] -> %s%n", target);
 			}
 
-			throw new RuntimeException("duplicate class target name mappings detected");
+			throw new RuntimeException("duplicate class target name mappings detected");*/
 		}
 	}
 
